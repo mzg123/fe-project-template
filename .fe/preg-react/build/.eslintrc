@@ -1,0 +1,23 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "globals": {
+      "window": true,
+      "document": false
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "react/jsx-indent": [
+            4,
+        ],
+        "react/destructuring-assignment":0,
+        "react/forbid-prop-types": 0,
+        "class-methods-use-this": 0,
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/no-static-element-interactions": 0,
+        "react/jsx-filename-extension":0,
+     }
+}

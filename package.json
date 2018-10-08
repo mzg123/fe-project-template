@@ -1,0 +1,15 @@
+{
+  "name": "fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "a=${npm_config_argv##*--};b=${a%%\\\"*};mkdir ./$b;cp -rf ./.fe/base/. ./$b;echo init $b finished.",
+    "init-preg": "a=${npm_config_argv##*--};b=${a%%\\\"*};npm run init --$b;cp -rf ./.fe/preg/src/config/comm/. ./$b/src/config/comm;",
+    "init-react": "a=${npm_config_argv##*--};b=${a%%\\\"*};npm run init --$b;cp -rf ./.fe/react/. ./$b;",
+    "init-preg-react": "a=${npm_config_argv##*--};b=${a%%\\\"*};npm run init --$b;cp -rf ./.fe/preg-react/. ./$b;",
+    "init-debug": "echo $npm_config_argv;a=${npm_config_argv##*--};echo $a;b=${a%%\\\"*};echo $b;"
+  },
+  "author": "",
+  "license": "ISC"
+}
